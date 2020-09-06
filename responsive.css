@@ -65,11 +65,7 @@
     top: -20px;
     position: relative;
 }
-.primary-menu ul {
-	opacity: 0;
-	visibility: hidden;
-	height: 0;
-}
+
 .header-menu {
 	width: 100%;
 }
@@ -160,6 +156,37 @@
 }
 .contact-form {
 	padding: 20px;
+}
+.t-item {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* responsive */
+
+.primary-menu ul {
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+}
+.primary-menu .mobile-menu-check:checked ~ ul{
+	opacity: 1;
+	visibility: visible;
+	height: 100%;
+}
+.primary-menu ul li {
+	position: relative;
+	display: block;
+}
+.primary-menu span {
+	position: absolute;
+	top: 50px;
+}
+.mobile-menu-check {
+	margin-left: 35px;
+	opacity: 0;
+	cursor: pointer;
 }
 }
 
